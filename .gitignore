@@ -1,0 +1,75 @@
+# Global gitignore - apply via:
+# git config --global core.excludesfile ~/.config/git/ignore
+
+# === SECRETS (NEVER COMMIT) ===
+.env
+.env.local
+.env.*.local
+*.env
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+
+# === DEPENDENCIES ===
+node_modules/
+vendor/
+.venv/
+__pycache__/
+*.pyc
+
+# === BUILD OUTPUTS ===
+dist/
+build/
+.next/
+out/
+.turbo/
+.nuxt/
+.output/
+
+# === CACHES ===
+.cache/
+.npm/
+.yarn/
+.pnpm-store/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# === IDE ===
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# === OS ===
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === LOGS ===
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === TEST/COVERAGE ===
+coverage/
+.nyc_output/
+*.lcov
+htmlcov/
+
+# === TEMP ===
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
